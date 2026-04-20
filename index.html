@@ -236,7 +236,7 @@
     }
     .feedback-chip.show { opacity: 1; }
 
-    /* ── NAV ── */
+    /* ── NAVIGATION BAR ── */
     .nav-row {
       display: flex;
       justify-content: space-between;
@@ -265,7 +265,7 @@
     .nav-btn.primary:hover { background: var(--blue-dark); }
     .nav-btn.primary:disabled { background: var(--blue); }
 
-    /* ── RESULTS ── */
+    /* ── RES ── */
     .match-banner {
       text-align: center;
       padding: 28px 16px 16px;
@@ -367,7 +367,7 @@
       text-align: right;
     }
 
-    /* ── CTA BUTTONS ── */
+    /* ── BUTTONS ── */
     .cta-btn {
       display: block;
       width: 100%;
@@ -403,7 +403,7 @@
     }
     .restart-btn:hover { background: var(--bg2); }
 
-    /* ── FORM LINK SECTION ── */
+    /* ── GOOGLE FORMS ── */
     .form-section {
       margin-top: 16px;
       background: var(--bg2);
@@ -446,7 +446,6 @@
 
 <div class="page">
 
-  <!-- HEADER -->
   <div class="header">
     <div class="logo-row">
       <svg width="32" height="32" viewBox="0 0 28 28" fill="none">
@@ -459,7 +458,6 @@
     <p class="header-sub">Answer 7 quick questions — find your ideal career track</p>
   </div>
 
-  <!-- QUIZ -->
   <div id="quiz">
     <div class="prog-row">
       <div class="prog-bar"><div class="prog-fill" id="prog" style="width:0%"></div></div>
@@ -479,7 +477,6 @@
     </div>
   </div>
 
-  <!-- RESULTS -->
   <div id="results" class="hidden"></div>
 
 </div><!-- /page -->
@@ -589,7 +586,6 @@ const TRACKS = {
   }
 };
 
-// ── REPLACE THIS with your actual Google Form URL ──
 const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdMqmqTJ3lOlEAlmw1HfamVjba0Ce3ahRa6BwckWjoYCZJndA/viewform";
 
 let cur = 0, sel = [], scores = {f:0,t:0,a:0};
